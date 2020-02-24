@@ -1,5 +1,5 @@
 package myrego
-import data.jenkins.acl
+import data.myapi.acl
 import input
 default allow=false
 
