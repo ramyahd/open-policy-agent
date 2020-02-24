@@ -5,10 +5,7 @@ default allow=false
 
 allow{
 	access = acl[input.user]
-	access[_] == input.access
+	some i
+	access[i] == input.access
 }
 
-whocan[user] {
-	access = acl[user]
-	access[_] == input.access
-}
