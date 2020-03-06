@@ -1,8 +1,7 @@
 package play
-import data.metrics
 import input
-foo[data.committer[i].metrics] {
-    data.committer[i].branch_name == input.committer.branch_name
-    data.committer[i].name == input.committer.name
+foo[input.committer[i].metrics] {
+    input.committer[i].branch_name == "feature"
+    input.committer[i].name == "Bob"
     
     }
