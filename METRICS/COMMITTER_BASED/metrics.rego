@@ -6,8 +6,8 @@ import data.commit.acl
 
 default allow = false
 allow {
-        access = acl[input.name]
-       # access[_] == input.branch_name
+        branhc_name = acl[input.name]
+        branch_name[_] == input.branch_name
 }
 
 #foo[commit[i].metrics] {
