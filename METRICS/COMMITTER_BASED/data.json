@@ -1,4 +1,4 @@
-{
+/*{
   "committer":
   [
     {
@@ -38,4 +38,24 @@
         ]
     }
     ]
+}*/
+
+
+{
+	"user1": {
+		"master": {
+			"metrics": [{
+				"code-covergae": "90"
+			}]
+		},
+		"feature": {
+			"metrics": [{
+				"code-covergae": "80"
+			}]
+		}
+	},
+	"user2": [
+		"master",
+		"feature"
+	]
 }
