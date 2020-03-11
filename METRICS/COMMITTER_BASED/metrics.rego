@@ -5,7 +5,7 @@ import data.commit.acl.role_bindings
 
 
 
-default allow = false
+#default allow = false
 #allow {
        
  #      access = acl[input.name]
@@ -16,11 +16,12 @@ default allow = false
 #}
 
 
-allow {
+foo[user_rules[_]]
+{
   user_bindings = role_bindings[req.name][_]
   user_roles == roles[user_bindings]
-#  user_rules = user_roles[req.branch_name]
-  
+  user_rules = user_roles[req.branch_name]
+    
 }
 
 
