@@ -17,10 +17,10 @@ default allow = false
 
 
 allow {
-  user_bindings = role_bindings[req.user][_]
+  user_bindings = role_bindings[req.name][_]
   user_roles = roles[user_bindings]
-  user_rules = user_roles[req.path]
-  user_rules[_] = req.method
+  user_rules = user_roles[req.branch_name]
+  
 }
 
 
