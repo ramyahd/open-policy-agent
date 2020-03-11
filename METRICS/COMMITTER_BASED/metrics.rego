@@ -1,6 +1,6 @@
-package metrics.policy
+package commit.policy
 import input
-import data.metrics.acl
+import data.commit.acl
 
 foo[commit[i].metrics] {
     commit := acl[input.name]
