@@ -7,7 +7,8 @@ import data.commit.acl
 default allow = false
 allow {
        
-       input.name == acl[input.name]
+       access = acl[input.name]
+       access[_] == input.branch_name
        #committer[_].name == input.committer.name
        #input.committer.branch_name == acl[input.committer[i].branch_name]
         # == input.committer.name
