@@ -1,22 +1,21 @@
 
 
-
 {
-	"user1": 
-	[
-		{
-			"master": {
-				"metrics": [
-					{
-					"code-covergae": "90"
-				}
-				]
-			}
+	"roles": {
+		"master": {
+			"metrics": [{
+				"code-coverage": "50"
+			}]
+		},
+		"feature": {
+			"metrics": [{
+				"code-coverage": "50"
+			}]
 		}
+	},
 
-	],
-	"user2": [
-		"master",
-		"feature"
-	]
+	"role_bindings": {
+		"alice": ["master", "feature"],
+		"bob": ["master"]
+	}
 }
