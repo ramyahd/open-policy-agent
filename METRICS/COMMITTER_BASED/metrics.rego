@@ -6,8 +6,8 @@ import data.commit.acl
 
 default allow = false
 allow {
-       input.committer.name == acl[input.committer[i].name]
-        
+       name = acl[input.committer]
+        name[_] == input.committer.name
 }
 
 #foo[commit[i].metrics] {
