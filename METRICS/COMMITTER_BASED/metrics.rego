@@ -16,7 +16,7 @@ import data.commit.acl.role_bindings
 #}
 
 
-foo[user_rules[_]]
+foo[user_rules]
 {
   user_bindings = role_bindings[req.name][_]
   user_roles = roles[user_bindings]
