@@ -1,44 +1,4 @@
-/*{
-  "committer":
-  [
-    {
-      "name":"Alice",
-      "branch_name":"master",
-      "metrics":[
-        {
-        "code-coverage":"50"
-        }
-        ]
-    },
-    {
-      "name":"Alice",
-      "branch_name":"feature",
-      "metrics":[
-        {
-        "code-coverage":"85"
-        }
-        ]
-    },
-    {
-      "name":"Bob",
-      "branch_name":"master",
-      "metrics":[
-        {
-        "code-coverage":"60"
-        }
-        ]
-    },
-    {
-      "name":"Bob",
-      "branch_name":"feature",
-      "metrics":[
-        {
-        "code-coverage":"80"
-        }
-        ]
-    }
-    ]
-}*/
+
 
 
 {
