@@ -6,7 +6,7 @@ import data.commit.acl
 
 default allow = false
 allow {
-        branch_name = acl[input.committer]
+        branch_name = acl[input.committer[i].branch_name]
         branch_name[_] == input.branch_name
 }
 
