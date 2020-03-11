@@ -1,12 +1,12 @@
 package commit.policy
-import input
+import committer
 import data.commit.acl
 
 
 
 default allow = false
 allow {
-        input.committer.name == acl[input.committer[i].name]
+       committer.name == acl[committer[i].name]
         
 }
 
