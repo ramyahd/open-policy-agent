@@ -18,8 +18,8 @@ default allow = false
 
 allow {
   user_bindings = role_bindings[req.name][_]
-  user_roles = roles[user_bindings]
-  user_rules = user_roles[req.branch_name]
+  user_roles == roles[user_bindings]
+#  user_rules = user_roles[req.branch_name]
   
 }
 
