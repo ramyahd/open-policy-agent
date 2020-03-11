@@ -1,5 +1,5 @@
 package commit.policy
-import input.committer
+import input
 import data.commit.acl
 
 
