@@ -3,11 +3,11 @@
 {
 	"roles": {
 		"master": {
-			"metrics": [{
+			"/metrics/": [{
 				"code-coverage": "50"
 			}]
 		},
-		"feature": {
+		"/feature/": {
 			"metrics": [{
 				"code-coverage": "50"
 			}]
