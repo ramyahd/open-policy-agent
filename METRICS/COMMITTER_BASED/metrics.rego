@@ -24,7 +24,7 @@ import data.commit.acl
 #}
 
 
-foo[committer] 
+foo[input.name] 
 {
        some i,j
        committer := acl[committer]
