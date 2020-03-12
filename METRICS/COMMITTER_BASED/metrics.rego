@@ -8,7 +8,7 @@ import data.commit.acl
 #default allow = false
 #allow {
        
- #      access = acl[input.name]
+ #      access = acl[input.commiter[_]]
   #     access[_] == input.branch_name
        #committer[_].name == input.committer.name
        #input.committer.branch_name == acl[input.committer[i].branch_name]
@@ -28,7 +28,7 @@ import data.commit.acl
 foo[server] 
 {
        some i,j
-       server := acl[committer]
+       server := acl[committer[_]]
        server[i].name == input.branch_name
        server[j].branch == input.name
        }
