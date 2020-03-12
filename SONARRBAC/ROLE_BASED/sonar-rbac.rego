@@ -4,8 +4,8 @@ package sonarrbac.policy
 
 import input as req
 
-import data.rbac.acl.roles
-import data.rbac.acl.role_bindings
+import data.sonarrbac.acl.roles
+import data.sonarrbac.acl.role_bindings
 
 default allow = false
 
