@@ -1,16 +1,16 @@
 {
   "roles": {
     "alicemaster": {
-      "/master/": [{"code-covarage": "50"}]
+      "master": [{"code-covarage": "50"}]
     },
     "alicefeature": {
-      "/feature/":  [{"code-covarage": "90"}]
+      "feature":  [{"code-covarage": "90"}]
     },
     "bobmaster": {
-      "/master/": [{"code-covarage": "60"}]
+      "master": [{"code-covarage": "60"}]
     },
     "bobfeature": {
-      "/feature/": [{"code-covarage": "70"}]
+      "feature": [{"code-covarage": "70"}]
     }
   },
 
