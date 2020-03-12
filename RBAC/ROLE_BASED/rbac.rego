@@ -1,4 +1,4 @@
-package httpapi.rbac
+package rbac.policy
 
 import input as req
 
