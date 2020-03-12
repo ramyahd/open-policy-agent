@@ -1,7 +1,6 @@
 package commit.policy
 import input 
 import data.commit.acl
-import data.commit.acl
 
 
 
@@ -25,12 +24,12 @@ import data.commit.acl
 #}
 
 
-foo[server] 
+foo[committer] 
 {
        some i,j
-       server := acl[committer]
-       server[i].name == input.branch_name
-       server[j].branch == input.name
+       committer := acl[committer]
+       committer[i].name == input.branch_name
+       committer[j].branch == input.name
        }
  #   commit := acl[input.name]
   #  commit == input.name
