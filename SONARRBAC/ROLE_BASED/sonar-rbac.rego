@@ -13,7 +13,7 @@ allow {
   user_bindings = role_bindings[req.user][_]
   user_roles = roles[user_bindings]
   user_rules = user_roles[req.path]
-  result
+  
 }
 
 
