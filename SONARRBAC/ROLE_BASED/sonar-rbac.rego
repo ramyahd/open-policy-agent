@@ -1,5 +1,5 @@
   
-package httpapi.rbac
+package sonarrbac.policy
 
 
 import input as req
