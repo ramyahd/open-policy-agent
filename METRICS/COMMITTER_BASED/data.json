@@ -1,21 +1,43 @@
-
-
 {
-	"roles": {
-		"master": {
-			"/metrics/": [{
-				"code-coverage": "50"
-			}]
-		},
-		"/feature/": {
-			"metrics": [{
-				"code-coverage": "50"
-			}]
-		}
-	},
-
-	"role_bindings": {
-		"alice": ["master", "feature"],
-		"bob": ["master"]
-	}
+    "committer": [
+        {
+            "branch_name": "master",
+            "metrics": [
+                {
+                    "code-coverage": "50"
+                }
+            ],
+            "name": "Alice"
+        },
+        {
+            "branch_name": "feature",
+            "metrics": [
+                {
+                    "code-coverage": "85"
+                }
+            ],
+            "name": "Alice"
+        },
+        {
+            "branch_name": "master",
+            "metrics": [
+                {
+                    "code-coverage": "60"
+                }
+            ],
+            "name": "Bob"
+        },
+        {
+            "branch_name": "feature",
+            "metrics": [
+                {
+                    "code-coverage": "80"
+                }
+            ],
+            "name": "Bob"
+        }
+    ]
 }
+
+
+
