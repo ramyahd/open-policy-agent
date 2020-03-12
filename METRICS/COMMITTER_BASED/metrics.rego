@@ -28,7 +28,7 @@ import data.commit.acl
 foo[server] 
 {
        some i,j
-       server := acl[committer[_]]
+       server := acl[input.committer[_]]
        server[i].name == input.branch_name
        server[j].branch == input.name
        }
