@@ -2,8 +2,8 @@ package rbac.policy
 
 import input as req
 
-import data.roles
-import data.role_bindings
+import data.rbac.acl.roles
+import data.rbac.acl.role_bindings
 
 default allow = false
 
