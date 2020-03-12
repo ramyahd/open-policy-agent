@@ -1,0 +1,21 @@
+{
+  "roles": {
+    "alicemaster": {
+      "/master/": [{"code-covarage": "50"}]
+    },
+    "alicefeature": {
+      "/feature/":  [{"code-covarage": "90"}]
+    },
+    "bobmaster": {
+      "/master/": [{"code-covarage": "60"}]
+    },
+    "bobfeature": {
+      "/feature/": [{"code-covarage": "70"}]
+    }
+  },
+
+  "role_bindings": {
+    "alice":   ["alicemaster", "alicefeature"],
+    "bob":     ["bobmaster"]
+  }
+}
