@@ -1,7 +1,7 @@
 package commit.policy
-import input as req
-import data.commit.acl.roles
-import data.commit.acl.role_bindings
+import input 
+import data.commit.acl
+import data.commit.acl
 
 
 
