@@ -16,16 +16,22 @@ import data.commit.acl.role_bindings
 #}
 
 
-foo[user_roles[req.branch_name[_]]]
-{
-  user_bindings = role_bindings[req.name][_]
-  user_roles = roles[user_bindings]
-  user_rules = user_roles[req.branch_name]
+#foo[user_roles[req.branch_name[_]]]
+#{
+ # user_bindings = role_bindings[req.name][_]
+  #user_roles = roles[user_bindings]
+  #user_rules = user_roles[req.branch_name]
     
-}
+#}
 
 
-#foo[commit[i].metrics] {
+foo[server] 
+{
+       some i,j
+       server := acl[input.servers[_]]
+       server[i].name == input.branch_name
+       server[j].branch == input.name
+       }
  #   commit := acl[input.name]
   #  commit == input.name
    # committer = acl[input.branch_name]
