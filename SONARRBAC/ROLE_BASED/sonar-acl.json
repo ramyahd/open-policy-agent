@@ -17,5 +17,9 @@
   "role_bindings": {
     "alice":   ["alicemaster", "alicefeature"],
     "bob":     ["bobmaster"]
-  }
+  },
+  "access": [
+		"user2",
+		"ramya"
+	]
 }
