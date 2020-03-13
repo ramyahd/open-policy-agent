@@ -25,10 +25,10 @@ deny[msg]
 }
 
 allow {
-        access = access[access]
-	access[_] == req.auth
+        #access = access[access]
+	#access[_] == req.auth
         #access[_] == input.access.user
-       # access[_] == access["req.auth"]
+        access[_] == req.auth
 	}
 
 
