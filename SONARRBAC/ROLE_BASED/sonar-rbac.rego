@@ -19,7 +19,7 @@ default allow = false
 
 deny[msg]
 { 
-	  not hello 
+	  not allow 
     msg := "you are not authorized to check the result"
     
 }
