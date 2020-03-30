@@ -6,17 +6,16 @@ import data.sonarcode.acl.roles
 import data.sonarcode.acl.role_bindings
 import data.sonarcode.acl.access
 
-default hello =false
+default auth =false
 default approve = false
 
 deny[msg]
 { 
-    not hello 
+    not auth 
     msg := "you are not authorized to check the result"
     
 }
-
-hello {
+auth {
        # access = access["ramya"]
         #access[_] == input.access.user
         #access[_] == "ramya"
@@ -25,7 +24,7 @@ hello {
 
 
 result[user_rules] {
-    hello
+    auth
     user_bindings = role_bindings[req.project][_]
     user_roles = roles[user_bindings]
     user_rules = user_roles[req.branch]
