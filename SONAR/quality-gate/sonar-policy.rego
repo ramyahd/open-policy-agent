@@ -1,4 +1,4 @@
-package sonarcode.rbac
+package sonarcode.policy
 
 import input as req
 
