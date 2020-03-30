@@ -2,15 +2,12 @@ package sonarcode.policy
 
 import input as req
 
-import data.sonarrbac.acl.roles
-import data.sonarrbac.acl.role_bindings
-import data.sonarrbac.acl.access
+import data.sonarcode.acl.roles
+import data.sonarcode.acl.role_bindings
+import data.sonarcode.acl.access
 
 default hello =false
 default approve = false
-import input.role_bindings
-import input.roles
-import input.access
 
 deny[msg]
 { 
