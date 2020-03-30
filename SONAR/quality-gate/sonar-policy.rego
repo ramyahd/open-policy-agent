@@ -26,7 +26,7 @@ hello {
 
 result[user_rules] {
     hello
-    user_bindings = role_bindings[req.user][_]
+    user_bindings = role_bindings[req.project][_]
     user_roles = roles[user_bindings]
     user_rules = user_roles[req.branch]
     #user_bindings = role_bindings["Wolvorines"][_]
