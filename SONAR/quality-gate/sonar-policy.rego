@@ -1,4 +1,4 @@
-package httpapi.rbac
+package sonarcode.rbac
 
 import input as req
 
