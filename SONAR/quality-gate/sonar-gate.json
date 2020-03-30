@@ -1,9 +1,31 @@
-
 {
-"maheedhar":{
-"quality-gate":"50"
-},
-"user1":{
-"quality-gate":"70"
-}
+    "access": [
+        "user2",
+        "ramya"
+    ],
+    "role_bindings": {
+        "BMIbeta": [
+            "BMIbetametrics"
+        ],
+        "Wolvorines": [
+            "WolvorinesMetrics"
+        ]
+    },
+    "roles": {
+        "BMIbetametrics": {
+            "Metrics": [
+                {
+                    "codecoverage": "70"
+                }
+            ]
+        },
+        "WolvorinesMetrics": {
+            "Metrics": [
+                {
+                    "Vulnerability": "1",
+                    "codecoverage": "90"
+                }
+            ]
+        }
+    }
 }
