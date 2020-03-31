@@ -36,12 +36,11 @@ result[user_rules] {
     #user_bindings = role_bindings["Wolvorines"][_]
     #user_roles = roles[user_bindings]
     #user_rules = user_roles["Metrics"]  
-  
+    approve 
 }
 
 approve
 {
-    auth
     some i
     user_bindings = role_bindings[req.project][_]
     user_roles = roles[user_bindings]
