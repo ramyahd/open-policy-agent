@@ -18,7 +18,7 @@ authorization[msg]
 sonarmetrics[msg1]
 {
 	not approve
-	msg1 := "code coverage and vuilnerabilites are not met"
+	msg1 := "code coverage and vulnerabilites are not met"
 }
 auth {
        # access = access["ramya"]
