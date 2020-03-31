@@ -7,13 +7,14 @@ import data.sonarcode.acl.role_bindings
 import data.sonarcode.acl.access
 
 default auth =false
-#default approve =false
+default approve =false
 
 deny[msg]
 { 
     not auth 
     msg := "you are not authorized to check the result"
-    
+    not approve
+    msg1 := "Code coverage and vulnerabilities are not met"
 }
 auth {
        # access = access["ramya"]
@@ -34,7 +35,7 @@ result[user_rules] {
   
 }
 
-approve[user_rules]
+approve
 {
    # some i
     user_bindings = role_bindings[req.project][_]
