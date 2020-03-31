@@ -41,6 +41,7 @@ result[user_rules] {
 
 approve
 {
+    auth
     some i
     user_bindings = role_bindings[req.project][_]
     user_roles = roles[user_bindings]
