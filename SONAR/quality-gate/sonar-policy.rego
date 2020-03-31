@@ -7,7 +7,7 @@ import data.sonarcode.acl.role_bindings
 import data.sonarcode.acl.access
 
 default auth =false
-default approve = false
+#default approve = false
 
 deny[msg]
 { 
@@ -34,12 +34,12 @@ result[user_rules] {
   
 }
 
-approve
-{
+#approve
+#{
    # some i
-    user_bindings = role_bindings[req.user][_]
-    user_roles = roles[user_bindings]
-    user_rules = user_roles[req.branch]
+ #   user_bindings = role_bindings[req.user][_]
+  #  user_roles = roles[user_bindings]
+   # user_rules = user_roles[req.branch]
     #user_rules[i].Vulnerability == "1"
     #user_rules[i].codecoverage == "90"
-}
+#}
