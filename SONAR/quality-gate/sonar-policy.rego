@@ -41,7 +41,6 @@ approve
     user_bindings = role_bindings[req.project][_]
     user_roles = roles[user_bindings]
     user_rules = user_roles[req.branch]
-   # user_rules = user_roles[req.branch]
     user_rules[i].Vulnerability == "1"
-    #user_rules[i].codecoverage == "90"
+    user_rules[i].codecoverage == "90"
 }
