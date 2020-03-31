@@ -13,8 +13,12 @@ deny[msg]
 { 
     not auth 
     msg := "you are not authorized to check the result"
-    not approve
-    msg := "Code coverage and vulnerabilities are not met"
+}
+
+deny1[msg1]
+{
+	not approve
+	msg1 := "code coverage and vuilnerabilites are not met"
 }
 auth {
        # access = access["ramya"]
