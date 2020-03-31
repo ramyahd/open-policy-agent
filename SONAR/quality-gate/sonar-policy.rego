@@ -9,13 +9,13 @@ import data.sonarcode.acl.access
 default auth =false
 default approve =false
 
-deny[msg]
+authorization[msg]
 { 
     not auth 
     msg := "you are not authorized to check the result"
 }
 
-deny1[msg1]
+sonarmetrics[msg1]
 {
 	not approve
 	msg1 := "code coverage and vuilnerabilites are not met"
