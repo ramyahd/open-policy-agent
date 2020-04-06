@@ -1,5 +1,5 @@
 
-package acl
+package gitlab.policy
 
 # User attributes
 user_attributes = {
