@@ -3,7 +3,7 @@ package gitlab.policy
 
 # User attributes
 user_attributes = {
-    "alice": {"commits": 15, "role": "admin"},
+    "vaishnavi": {"commits": 15, "role": "admin"},
     "bob": {"commits": 5, "role": "developer"}
 }
 
